@@ -1,13 +1,5 @@
 	<!-- Main Page -->
 	<div class="container">
-	<!-- Status message -->
-    <?php  
-        if(!empty($success_msg)){ 
-            echo '<p class="status-msg success">'.$success_msg.'</p>'; 
-        }elseif(!empty($error_msg)){ 
-            echo '<p class="status-msg error">'.$error_msg.'</p>'; 
-        } 
-    ?>
 		
 			
 			<div class="row" style=" height:50px; padding: 50px; margin-top:100px;">
@@ -23,6 +15,13 @@
 					</div>
 				<div class="col s6" >
 				<div class="row">
+					<!-- show error messages if the form validation fails -->
+<?php if ($this->session->flashdata()) { ?>
+        <div class="alert alert-danger">
+			<?=$this->session->flashdata('errors'); ?>
+			<?= $this->session->flashdata('msg'); ?>
+        </div>
+    <?php } ?>
 
 	<!-- If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php". -->
 					<form class="col s12" action="<?php echo base_url(); ?>user/register" method="post" style="padding: 50px;">
