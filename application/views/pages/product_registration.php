@@ -3,7 +3,7 @@
 	
 		<!-- Product Form -->
 	 <div class="row" >
-         <form class="col s12" action="<?php echo base_url(); ?>product/register" method="post" style="padding: 50px;">
+         <form class="col s12" action="<?php echo base_url(); ?>BlobDemo/register" method="post" style="padding: 50px;">
              
         
              

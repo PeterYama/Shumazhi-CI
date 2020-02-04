@@ -6,7 +6,7 @@ class productModel extends CI_Model{
     } 
     
     public function register_product($data){      
-         $this->db->insert('products', $data);
+         $this->db->insert('product', $data);
         
     }
 }
