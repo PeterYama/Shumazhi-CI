@@ -9,37 +9,48 @@
 							
 
 							<div class="input-field col s6">
-								<input placeholder="Product Name" id="product_name" type="text">
+								<input placeholder="Product Name" id="product_name" name ="product_name" type="text">
 							</div>
 
 							<div class="input-field col s6">
-								<input placeholder="Product Brand" id="product_name" type="text">
+								<input placeholder="Product Brand" id="product_brand" name ="product_brand"  type="text">
 							</div>
 
 							<div class="input-field col s12">
-								<input placeholder="Product Description" id="product_description">
+								<input placeholder="Product Description" id="product_description" name ="product_description"  type="text">
 							</div>
 
-							<div class="input-field col s12">
-								<input placeholder="Product Instructions" id="product_description">
-							</div>
 
-						
+							<div class="col s12" style="margin-top:50px;">
+								<form action="#" >
+									<div class="file-field input-field">
+										<div class="btn-small right">
+											<span>Select File </span>
+											<input name="product_instructions" type="file" multiple >
+										</div>
+										<div class="file-path-wrapper">
+											<input  class="file-path validate" type="text">
+										</div>
+									</div>
+								</form>
+							</div>
+							
+
 							
 							<div class="col s12" style="margin-top:50px;">
 								<form action="#" >
 									<div class="file-field input-field">
 										<div class="btn-small right">
 											<span>Select Images</span>
-											<input type="file" multiple>
+											<input name="product_image" type="file" multiple >
 										</div>
 										<div class="file-path-wrapper">
-											<input class="file-path validate" type="text">
+											<input  class="file-path validate" type="text">
 										</div>
 									</div>
 								</form>
 							</div>
-							<Button type="submit" style="float:right; margin-top:50px;" class="btn">Confirm</Button>
+							<input class = "btn btn-success" name="register" type="submit" class="btn btn-register" value="Confirm" />
 						</div>
 							<!-- <div class="input-field col s12" >
 								<p>Product Image</p>
