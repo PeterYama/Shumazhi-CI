@@ -1,6 +1,6 @@
 	<!-- Main Page -->
 	<div class="container">
-		<<<<<<< HEAD=======<!-- Status message -->
+		<!-- Status message -->
 			<?php
 			if (!empty($success_msg)) {
 				echo '<p class="status-msg success">' . $success_msg . '</p>';
@@ -8,9 +8,6 @@
 				echo '<p class="status-msg error">' . $error_msg . '</p>';
 			}
 			?>
-			>>>>>>> NumaTemp
-
-
 			<div class="row" style=" height:50px; padding: 50px; margin-top:100px;">
 
 				<div class="col s6" style="padding: 10px;">
