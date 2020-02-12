@@ -24,6 +24,21 @@
 			border-color: #E7E7E7;
 		}
 
+		.card-image {
+			width: 150px;
+			height: 150px;
+			margin-right:10px;
+			margin-top:10px;
+		}
+		.card-description {
+			padding:10px;
+			font-family:Arial, Helvetica, sans-serif;
+			font-size: 14px;
+		}
+		.card-title {
+			padding:10px;
+			font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		}
 	</style>
 </head>
 
