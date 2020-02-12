@@ -7,10 +7,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '192.168.1.105:80',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'db_shumazhi',
+	'hostname' => 'remotemysql.com:3306',
+	'username' => 'FLne8DY5HI',
+	'password' => 'C38Hz8ZYOL',
+	'database' => 'FLne8DY5HI',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

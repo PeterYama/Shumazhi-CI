@@ -52,7 +52,7 @@ class Product extends CI_Controller
 				);
 
 				$insert = $this->register_p->register_product($data); 
-// $result = $this->curl->simple_get('GET', 'https://api.example.com/get_url/'.$data['product_name']['brand_name'], false);
+			// $result = $this->curl->simple_get('GET', 'https://api.example.com/get_url/'.$data['product_name']['brand_name'], false);
 			// $get_data= $this->curl-> callAPI('GET', 'https://api.qrserver.com/v1/create-qr-code/?size=150x150&data='.$data['product_name'], false);
 			// //var_dump($result);
 
@@ -62,7 +62,7 @@ class Product extends CI_Controller
 			// $response = json_decode($get_data, true);
 			// $errors = $response['response']['errors'];
 			// $data = $response['response']['data'][0]; 
-// $this->load->view("pages/test", $get_data);
+			// $this->load->view("pages/test", $get_data);
 				$this->session->set_flashdata('msg', 'Product added!'); 
 				redirect(base_url() . 'product'); 
 			}else{ 
@@ -74,4 +74,3 @@ class Product extends CI_Controller
 		}
 	}
 }
-?>
