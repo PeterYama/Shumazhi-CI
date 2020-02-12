@@ -1,6 +1,5 @@
 <div class="container" style="padding:10;">
 
-
 	<div class="row" style="padding:10px;">
 		<div class="col s6" style="margin-top: 10px;">Product Page</div>
 		<form action="" class="browser-default right">
@@ -16,7 +15,7 @@
 </div>
 <div class="row">
   <div class="col s12 ">
-    <div class="card hoverable" >
+    <div class="card hoverable opacity" >
       <div class="card-content dark-text">
 
         <?php if ($this->session->flashdata()) { ?>

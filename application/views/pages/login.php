@@ -1,4 +1,4 @@
-<div class="container" style="background-color:white; margin-top:300px; padding:50px">
+<div class="container" style="margin-top:300px; padding:50px">
     <form type="submmit" action="<?= base_url(); ?>user/login" method="post">
       <div class="row ">
 
