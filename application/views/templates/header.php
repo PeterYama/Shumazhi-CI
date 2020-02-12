@@ -37,15 +37,16 @@
 			font-size: 14px;
 		}
 
-		.card-title {
+		.card-title{
 			padding: 15px;
 			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 		}
-
-		.brand-logo {
-			width: 10px;
-			height: 10px;
+		
+		.logo{
+			height:80px;
+			width: 80px;
 		}
+
 	</style>
 </head>
 
@@ -64,7 +65,7 @@
 					<!-- <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Menu<i class="material-icons right">arrow_drop_down</i></a></li> -->
 				</ul>
 				<a href="#!" class="brand-logo left">
-					<img src="/assets/images/logo.png" alt="">
+					<img class="responsive-img logo hide-on-small-only" src="http://localhost/Shumazhi-CI/assets/images/logo6.png" >
 				</a>
 				<a href="#" class="sidenav-trigger hide-on-med-and-up" data-target="mobile-links" >
 					<i class="material-icons ">menu</i>
