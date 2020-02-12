@@ -20,7 +20,6 @@ class blobModel extends CI_Model{
         // $stmt->bindParam(':mime', $mime);
         // $stmt->bindParam(':data', $blob, PDO::PARAM_LOB);
         // echo $insert = "insert into products(product_name, product_brand, product_desc, product_inst, product_img) values ('$product_name', '$product_brand', '$product_desc', '$product_inst','$product_img')";
- 
         // return $stmt->execute();
         
     }
