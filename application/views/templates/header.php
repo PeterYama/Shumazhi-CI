@@ -36,7 +36,7 @@
 			font-size: 14px;
 		}
 		.card-title {
-			padding:10px;
+			padding:15px;
 			font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 		}
 	</style>
