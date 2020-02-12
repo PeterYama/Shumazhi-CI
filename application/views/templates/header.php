@@ -27,17 +27,24 @@
 		.card-image {
 			width: 150px;
 			height: 150px;
-			margin-right:10px;
-			margin-top:10px;
+			margin-right: 10px;
+			margin-top: 10px;
 		}
+
 		.card-description {
-			padding:10px;
-			font-family:Arial, Helvetica, sans-serif;
+			padding: 10px;
+			font-family: Arial, Helvetica, sans-serif;
 			font-size: 14px;
 		}
+
 		.card-title {
-			padding:15px;
-			font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+			padding: 15px;
+			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		}
+
+		.brand-logo {
+			width: 10px;
+			height: 10px;
 		}
 	</style>
 </head>
@@ -46,15 +53,31 @@
 	<!-- NavigationBar -->
 	<nav>
 		<div class="nav-wrapper navbar-default">
-			<a href="#!" class="brand-logo"></a>
-			<ul class="right hide-on-med-and-down">
-				<li><a href="badges.html">About</a></li>
-				<li><a href="<?php echo base_url(); ?>home">Home</a></li>
-				<li><a href="<?php echo base_url(); ?>login">Login</a></li>
-				<li><a href="<?php echo base_url(); ?>product">Products</a></li>
-				<li><a href="<?php echo base_url(); ?>product_registration">product registration</a></li>
-				<!-- Dropdown Trigger -->
-				<li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Menu<i class="material-icons right">arrow_drop_down</i></a></li>
-			</ul>
+			<div class="container">
+			<ul class="right hide-on-small-only">
+					<li><a href="<?php echo base_url(); ?>About">About</a></li>
+					<li><a href="<?php echo base_url(); ?>home">Home</a></li>
+					<li><a href="<?php echo base_url(); ?>login">Login</a></li>
+					<li><a href="<?php echo base_url(); ?>product">Products</a></li>
+					<li><a href="<?php echo base_url(); ?>product_registration">product registration</a></li>
+					<!-- Dropdown Trigger -->
+					<!-- <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Menu<i class="material-icons right">arrow_drop_down</i></a></li> -->
+				</ul>
+				<a href="#!" class="brand-logo left">
+					<img src="/assets/images/logo.png" alt="">
+				</a>
+				<a href="#" class="sidenav-trigger hide-on-med-and-up" data-target="mobile-links" >
+					<i class="material-icons ">menu</i>
+				</a>
+
+				<ul class="sidenav" id="mobile-links">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Login</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Products</a></li>
+					<li><a href="#">Products Registration</a></li>
+				</ul>
+				
+			</div>
 		</div>
 	</nav>

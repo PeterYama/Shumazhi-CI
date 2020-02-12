@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var instances = M.Dropdown.init(elems, options);
   });
 
-$(document).ready(function(){
-    $('.dropdown-trigger').sidenav();
+$(document).ready(function() {
+    $('.sidenav').sidenav();
 });
  

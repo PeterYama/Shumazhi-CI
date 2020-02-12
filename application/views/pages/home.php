@@ -10,7 +10,7 @@
 		?>
 		<div class="row" style=" height:50px; margin-top:100px;">
 
-			<div class="col s6">
+			<div class="col s12 m12 l6">
 				<div class="container">
 					<div class="row" style="margin-top: 50px;">
 
@@ -21,16 +21,14 @@
 						commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						<p>
-							<p class="white-text">
-								Lorem ipsum dolor sit amet. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-								commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-								<p>
+						<p class="white-text">
+							Lorem ipsum dolor sit amet. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+							commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						<p>
 				</div>
-
-
 			</div>
-			<div class="col s6">
+			<div class="col s12 m12 l6">
 				<div class="row">
 					<!-- show error messages if the form validation fails -->
 					<?php if ($this->session->flashdata()) { ?>
