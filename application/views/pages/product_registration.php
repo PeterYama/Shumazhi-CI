@@ -30,41 +30,6 @@
 
 
 				<div class="col s12" style="margin-top:50px;">
-<<<<<<< HEAD
-					<form action="#">
-						<div class="file-field input-field">
-							<div class="btn-small right">
-								<span>Select File </span>
-								<input name="product_instructions" type="file" multiple>
-							</div>
-							<div class="file-path-wrapper">
-								<input class="file-path validate" type="text">
-							</div>
-						</div>
-					</form>
-				</div>
-
-
-
-				<div class="col s12" style="margin-top:50px;">
-					<form action="#">
-						<div class="file-field input-field">
-							<div class="btn-small right">
-								<span>Select Images</span>
-								<input name="product_image" type="file" multiple>
-							</div>
-							<div class="file-path-wrapper">
-								<input class="file-path validate" type="text">
-							</div>
-						</div>
-					</form>
-				</div>
-				<input class="btn btn-success" name="register" type="submit" class="btn btn-register" value="Confirm" />
-			</div>
-		</form>
-	</div>
-	<div>
-=======
 					<!-- <form action="#" > -->
 						<div class="file-field input-field">
 							<div class="btn-small right">
@@ -104,4 +69,3 @@
 					<div>
 
 						
->>>>>>> origin/SujataTemp
