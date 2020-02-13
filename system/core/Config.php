@@ -104,7 +104,7 @@ class CI_Config {
 			}
 			else
 			{
-				$base_url = 'https://shumazhi.herokuapp.com/';
+				$base_url = 'http://localhost/Shumazhi-CI/';
 			}
 
 			$this->set_item('base_url', $base_url);
