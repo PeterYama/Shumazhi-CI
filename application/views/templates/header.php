@@ -16,7 +16,7 @@
 				/* linear-gradient(217deg, rgba(0,50,200,8), rgba(0,100,100,0) 70.71%),
             linear-gradient(127deg, rgba(0,100,100,.8), rgba(200,100,0,0) 70.71%),
             linear-gradient(336deg, rgba(0,200,0,.8), rgba(0,150,200,0) 70.71%), */
-				url('http://localhost/Shumazhi-CI/assets/images/Fuji1.jpg');
+				url('https://shumazhi.herokuapp.com/assets/images/Fuji1.jpg');
 		}
 
 		.navbar-default {
@@ -65,7 +65,7 @@
 					<!-- <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Menu<i class="material-icons right">arrow_drop_down</i></a></li> -->
 				</ul>
 				<a href="#!" class="brand-logo left">
-					<img class="responsive-img logo hide-on-small-only" src="http://localhost/Shumazhi-CI/assets/images/logo6.png" >
+					<img class="responsive-img logo hide-on-small-only" src="https://shumazhi.herokuapp.com/assets/images/logo6.png" >
 				</a>
 				<a href="#" class="sidenav-trigger hide-on-med-and-up" data-target="mobile-links" >
 					<i class="material-icons ">menu</i>
