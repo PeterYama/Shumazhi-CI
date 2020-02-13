@@ -13,9 +13,12 @@
     </div>
   <div class="row">
     <div class="col s12 ">
-      <div class="card hoverable blue-grey darken-1">
-        <div class="card-image right">
 
+      <!-- card -->
+      <div class="card hoverable blue-grey darken-1">
+
+        <!-- card image -->
+        <div class="card-image right">
           <?php
           require_once dirname(__FILE__) . '\test.php';
           $data = array(
@@ -25,18 +28,11 @@
           $image = CallAPI("POST", "https://api.qrserver.com/v1/create-qr-code/", $data);
           echo '<img src="data:image/png;base64,' . base64_encode($image) . '">';
           ?>
-
         </div>
+
         <a class="btn-floating halfway-fab blue btn-large" href="<?php echo base_url(); ?>product_registration"><i class="material-icons">add</i></a>
 
         <div class="card-content dark-text">
-
-          <?php if ($this->session->flashdata()) { ?>
-            <div class="alert alert-danger">
-              <?= $this->session->flashdata('errors'); ?>
-              <?= $this->session->flashdata('msg'); ?>
-            </div>
-          <?php } ?>
 
           <span class="flow-text card-title">Fridge MK-001</span>
           <p class="card-description ">This 230L top mount refrigerator from Hisense packs plenty of convenient features.
@@ -44,6 +40,8 @@
             Keep your food fresher for longer with the humidity-controlled crisper...
           </p>
         </div>
+
+        <!-- card action -->
         <div class="card-action">
           <a href="#" class="dark-text text-darken-2">Edit</a>
           <a href="#" class="dark-text text-darken-2">Delete</a>
