@@ -59,7 +59,7 @@
 					<li><a href="<?php echo base_url(); ?>About">About</a></li>
 					<li><a href="<?php echo base_url(); ?>home">Home</a></li>
 					<li><a href="<?php echo base_url(); ?>login">Login</a></li>
-					<li><a href="<?php echo base_url(); ?>product">Products</a></li>
+					<li><a href="<?php echo base_url(); ?>products">Products</a></li>
 					<li><a href="<?php echo base_url(); ?>product_registration">product registration</a></li>
 					<!-- Dropdown Trigger -->
 					<!-- <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Menu<i class="material-icons right">arrow_drop_down</i></a></li> -->
