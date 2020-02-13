@@ -1,56 +1,98 @@
-<div class="container" style="padding:10;">
+	<!-- Main Page -->
+	<div class="container">
+	    <!-- Status message -->
+	    <div class="row" style="padding:10px;">
+	        <div class="col s6" style="margin-top: 10px;">Product Page</div>
+	        <form action="" class="browser-default right">
+	            <input id="search-input" placeholder="Search" type="text" class="browser-default search-field" name="q" value="" autocomplete="off" aria-label="Search box">
+	            <label for="search-input"><i class="material-icons search-icon">search</i></label>
+	            <div class="search-popup">
+	                <div class="search-content">
+	                </div>
+	            </div>
+	        </form>
+	    </div>
+	    <div class="row" style=" height:50px; margin-top:100px;">
 
-    <div class="row" style="padding:10px;">
-        <div class="col s6" style="margin-top: 10px;">Product Page</div>
-        <form action="" class="browser-default right">
-            <input id="search-input" placeholder="Search" type="text" class="browser-default search-field" name="q" value="" autocomplete="off" aria-label="Search box">
-            <label for="search-input"><i class="material-icons search-icon">search</i></label>
-            <div class="search-popup">
-                <div class="search-content">
-                </div>
-            </div>
-        </form>
-    </div>
+	        <div class="col s12 m12 l6">
+	            <div class="container">
+	                <div class="row" style="margin-top: 50px;">
 
-    <div class="row">
-        <div class="col s12 ">
-            <div class="card hoverable blue-grey darken-1">
-                <div class="card-image right">
+	                    <h3 class="white-text">Shumazhi<h3>
+	                </div>
+	                <p class="white-text">
+	                    Lorem ipsum dolor sit amet. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+	                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+	                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	                    <p>
+	                        <p class="white-text">
+	                            Lorem ipsum dolor sit amet. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+	                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+	                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	                            <p>
+	            </div>
+	        </div>
+	        <div class="col s12 m12 l6">
+	            <div class="row">
+	                <!-- show error messages if the form validation fails -->
+	                <?php if ($this->session->flashdata()) { ?>
+	                    <div class="alert alert-danger">
+	                        <?= $this->session->flashdata('errors'); ?>
+	                        <?= $this->session->flashdata('msg'); ?>
+	                    </div>
+	                <?php } ?>
 
-                    <?php
-                    require_once dirname(__FILE__) . '\test.php';
-                    $data = array(
-                        'size' => '150x150',
-                        'data' => 'https://shumazhi.appspot.com/api/mongo/getProducts?name=Fridge&model=MK-001'
-                    );
-                    $image = CallAPI("POST", "https://api.qrserver.com/v1/create-qr-code/", $data);
-                    echo '<img src="data:image/png;base64,' . base64_encode($image) . '">';
-                    ?>
+	                <!-- If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php". -->
+	                <form class="col s12" action="<?php echo base_url(); ?>user/register" method="post" style="padding: 50px;">
+	                    <div class="row">
+	                        <div class="input-field col s6">
+	                            <input placeholder="First Name" name="first_name" type="text" class="validate">
+	                        </div>
+	                        <div class="input-field col s6">
+	                            <input name="last_name" placeholder="Last Name" type="text" class="validate">
+	                        </div>
+	                    </div>
 
-                </div>
-                <a class="btn-floating halfway-fab blue btn-large" href="<?php echo base_url(); ?>product_registration"><i class="material-icons">add</i></a>
 
-                <div class="card-content dark-text">
+	                    <div class="row">
 
-                    <?php if ($this->session->flashdata()) { ?>
-                        <div class="alert alert-danger">
-                            <?= $this->session->flashdata('errors'); ?>
-                            <?= $this->session->flashdata('msg'); ?>
-                        </div>
-                    <?php } ?>
+	                        <div class="input-field col s12">
+	                            <input placeholder="Company Name" name="company_name" type="text" class="validate">
+	                        </div>
 
-                    <span class="flow-text card-title">Fridge MK-001</span>
-                    <p class="card-description ">This 230L top mount refrigerator from Hisense packs plenty of convenient features.
-                        Adjustable shelves and configurable door bins provide your household with customizable flexibility.
-                        Keep your food fresher for longer with the humidity-controlled crisper...
-                    </p>
-                </div>
-                <div class="card-action">
-                    <a href="#" class="dark-text text-darken-2">Edit</a>
-                    <a href="#" class="dark-text text-darken-2">Delete</a>
-                </div>
+	                        <div class="input-field col s12 ">
+	                            <input name="email" type="email" class="validate ">
+	                            <label for="email" class="white-text">Email</label>
+	                        </div>
+	                    </div>
 
-            </div>
-        </div>
-    </div>
-</div>
+	                    <div class="row">
+	                        <div class="input-field col s12">
+	                            <input placeholder="Password" name="password" type="password" class="validate">
+	                        </div>
+
+	                    </div>
+	                    <div class="input-field col s12">
+	                        <i class="material-icons prefix">phone</i>
+	                        <input placeholder="Phone" name="phone" type="tel" class="validate">
+	                    </div>
+
+	                    <div class="row">
+	                        <div class="valign-wrapper.align-center">
+	                        </div>
+	                        <input class="btn btn-success col s12 #1565c0 blue darken-3 " style="margin-top:30px; height:50px" name="Login" type="submit" class="btn btn-register" value="Login" />
+	                    </div>
+	                    <div class="row">
+	                        <label for="existingUser" class="center-align">Don't have an account ?</label>
+	                        <input class="btn btn-success col s12 #1b5e20 green darken-3" style="margin-top:30px; height:50px" name="register" type="submit" class="btn btn-register" value="Register" />
+	                    </div>
+
+	                </form>
+	                <select name="country" name="country">a</select>
+	            </div>
+	        </div>
+	    </div>
+
+	</div>
+
+	</div>
