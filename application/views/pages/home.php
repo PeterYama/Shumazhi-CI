@@ -74,14 +74,15 @@
 						</div>
 
 						<div class="row">
-							<div class="valign-wrapper.align-center">
-							</div>
-							<input class="btn btn-success col s12 #1565c0 blue darken-3 " style="margin-top:30px; height:50px" name="Login" type="submit" class="btn btn-register" value="Login" />
-						</div>
 						<div class="row">
-							<label for="existingUser" class="center-align">Don't have an account ?</label>
 							<input class="btn btn-success col s12 #1b5e20 green darken-3" style="margin-top:30px; height:50px" name="register" type="submit" class="btn btn-register" value="Register" />
 						</div>
+							<div class="valign-wrapper.align-center">
+							</div>
+							<label for="existingUser" class="center-align">Already have an account ?</label>
+							<input class="btn btn-success col s12 #1565c0 blue darken-3 " style="margin-top:30px; height:50px" name="Login" type="submit" class="btn btn-register" value="Login" />
+						</div>
+					
 
 					</form>
 					<select name="country" name="country">a</select>

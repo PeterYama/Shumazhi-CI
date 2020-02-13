@@ -33,6 +33,4 @@ function CallAPI($method, $url, $data = false)
 
   return $result;
 }
-
-
 ?>
